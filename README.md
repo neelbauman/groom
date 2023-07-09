@@ -6,6 +6,9 @@
 
 *Modus Operandi with ORG-mode*の*acronym*を逆から読んだもの。
 「org-modeを使った仕事のやり方」,「org-mode運用法」といった意味となる。
+groomの一般的な意味であるところの「手入れする」「きちんと整える」という意味とかけて、
+org-modeを利用した仕事のマネジメントシステムを構築し運用することで、
+consistentでよく手入れされた開発環境を成長させたいという思いから。
 
 **groom**: 
 馬などを手入れする,きちんと身繕いする,未来に果たす役割または働きのために教育する,仕込む
@@ -19,15 +22,36 @@ emacsのメジャーモードの一種
 
 ##### 目標
 
-org-modeの仕様を把握し、理解し、
++ org-modeを利用した仕事のマネジメントシステムを構築し運用することで、
+consistentでよく手入れされた開発環境を発達させること。
++ org-modeの仕様を把握し、理解し、
 そこからauthoringやtask managementについての思想を抽出し、自らの仕事術とする。
 
 
 ##### What To Be ?
 
-+ 
 
 ##### What Not To Be ?
+
+### Org Mode as a task manegement tool
+
+TODOアイテムとタイムスタンプ、そしてAgenda Viewの３つがOrgのタスクマネジメントのスキームの基礎をなす。
+
+##### Agenda View
+
+OrgのAgenda Viewは、org-agenda-filesに登録されたすべてのorgファイルからアクティブなタイムスタンプをエントリとし、そのタイムスタンプが属するitemを収集しまとめて表示する。
+
+そのレイアウトは、次の3つの要素で構成される。
+1. on timeline
+1. on the day
+1. habit
+
+
+##### Entryのカテゴリ
+
+1. **habit**
+
+
 
 
 ### Org-modeについて
