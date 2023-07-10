@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+	echo "ファイル名を一つ入力してください"
+	exit 1
+fi
+
+[ -e $1 ] || {
+	mode='-*- mode:org; -*-';
+	echo "$mode" >> $1
+}
+
+emacs "$1" & &> /dev/null
+
