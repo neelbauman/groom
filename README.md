@@ -32,10 +32,10 @@ org-modeのタスク管理機能の仕様からauthoringやtask managementにつ
 + shell script (bash)
 
 
-<-- ##### What To Be ? -->
+<!-- ##### What To Be ? -->
 
 
-<-- ##### What Not To Be ? -->
+<!-- ##### What Not To Be ? -->
 
 
 

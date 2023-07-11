@@ -1,0 +1,14 @@
+* TODO TODO作成
+  SCHEDULED: <2023-07-12 水 10:00 .+1d>
+  :PROPERTIES:
+  :LAST_REPEAT: [2023-07-11 火 07:36]
+  :END:
+  :LOGBOOK:
+  - State "DONE"       from "TODO"       [2023-07-11 火 07:36]
+  - State "DONE"       from "TODO"       [2023-07-09 日 12:06]
+  CLOCK: [2023-07-09 日 08:03]--[2023-07-09 日 08:06] =>  0:03
+  CLOCK: [2023-07-09 日 07:41]--[2023-07-09 日 08:03] =>  0:22
+  - State "DONE"       from "TODO"       [2023-07-08 土 14:22]
+  - State "DONE"       from "TODO"       [2023-07-07 金 09:00]
+  - State "DONE"       from "TODO"       [2023-07-06 木 15:44]
+  :END:

@@ -1,0 +1,55 @@
+* TODO orgのマネジメントパラダイムを理解する 
+  SCHEDULED: <2023-07-11 火 10:00>
+  :LOGBOOK:
+  - State "DONE"       from "InPROGRESS" [2023-07-08 土 19:30]
+  - State "InPROGRESS" from "TODO"       [2023-07-08 土 10:26]
+  :END:
+
+* DONE 掃除
+  DEADLINE: <2023-07-08 土 12:00>
+  :LOGBOOK:
+  - State "DONE"       from "TODO"       [2023-07-08 土 12:24]
+  :END:
+
+* TODO GAS実装を進める [66%]
+** TODO ユーザインターフェース
+   SCHEDULED: <2023-07-09 日 10:00>
+   :LOGBOOK:
+   CLOCK: [2023-07-09 日 08:03]--[2023-07-09 日 08:03] =>  0:00
+   CLOCK: [2023-07-08 土 19:35]--[2023-07-08 土 20:09] =>  0:34
+   :END:
+** ABORTED ファイルとデータの操作
+   CLOSED: [2023-07-08 土 19:00] SCHEDULED: <2023-07-08 土 13:00>
+   :LOGBOOK:
+   - State "ABORTED"    from "TODO"       [2023-07-08 土 19:00] \\
+     orgについての考察とgroomの設計思想をまとめるのに時間がかかった。
+   :END:
+
+** ABORTED 日報データ取得とその評価の仕様を決める
+   CLOSED: [2023-07-11 火 07:12] DEADLINE: <2023-07-10 月>
+   :LOGBOOK:
+   - State "ABORTED"    from "TODO"       [2023-07-11 火 07:12] \\
+     計画変更
+   :END:
+
+* DONE IT支援員への連絡
+  SCHEDULED: <2023-07-07 金 13:00>
+  - State "DONE"       from "TODO"       [2023-07-07 金 13:04]
+  7/18以降の週での面談を再度スケジューリング
+  それまでに講座を選択し、絞ること、
+  GASの開発をする一日と講座を受講する一日を分けることを報告する
+* DONE 職業準備性講座の出欠確認
+  SCHEDULED: <2023-07-07 金 13:00>
+  - State "DONE"       from "TODO"       [2023-07-07 金 13:12]
+* DONE プレゼンテーション講座の感想
+  SCHEDULED: <2023-07-07 金 15:00>
+  - State "DONE"       from "TODO"       [2023-07-07 金 15:32]
+* COMMIT Org-modeによるタスク管理についての考察
+  SCHEDULED: <2023-07-07 金 14:00>
+  - State "DONE"       from "TODO"       [2023-07-07 金 15:03]
+** TODO gitによるバージョン管理と時系列・依存性管理
+** TODO ファイル分割単位やディレクトリ構造
+** TODO habit.orgの作成
+*** repeat timestampの使い方
+** TODO Agendaの使い方
+
