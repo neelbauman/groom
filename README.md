@@ -1,9 +1,5 @@
 # GROOM
 
-### Design Concept
-
-##### 由来
-
 *Modus Operandi with ORG-mode*の*acronym*を逆から読んだもの。
 「org-modeを使った仕事のやり方」,「org-mode運用法」といった意味となる。
 groomの一般的な意味であるところの「手入れする」「きちんと整える」という意味とかけて、
@@ -16,21 +12,30 @@ consistentでよく手入れされた開発環境を成長させたいという�
 *Modus Operandi* ::
 仕事のやり方、運用法、物事の作用の仕方、犯罪の手口  
 
-*Org Mode* ::
-emacsのメジャーモードの一種
-
+### Design Concept
 
 ##### 目標
 
-+ org-modeを利用した仕事のマネジメントシステムを構築し運用することで、
-consistentでよく手入れされた開発環境を発達させること。
-+ org-modeの仕様を把握し、理解し、
-そこからauthoringやtask managementについての思想を抽出し、自らの仕事術とする。
+1. consistentでwell-maintainedな作業環境を育てるためのタスク管理手法の策定
+1. 1.の手法を実現するためのツールの設計/開発
 
-##### What To Be ?
+org-modeのタスク管理機能の仕様からauthoringやtask managementについての
+思想を抽出することができるだろう。
+タスク管理が必要とされるあらゆる場面に組み込めて、
+ストレスなくタスクマネジメントができる
+ような手法にまで昇華させる。
+
+##### 使用技術
+
++ Org Mode (emacs native)
++ git
++ shell script (bash)
 
 
-##### What Not To Be ?
+<-- ##### What To Be ? -->
+
+
+<-- ##### What Not To Be ? -->
 
 
 
