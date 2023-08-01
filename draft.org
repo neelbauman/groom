@@ -1,5 +1,55 @@
 -*- mode:org; -*-
 
+* GROOM ver1.0
+** modius operandi with org-mode
+Groomとは、org-modeによるタスクマネジメント（TM）とオーサリング（AT）における書式、ディレクトリ構造、ワークフローに一貫性をもたせ、自由で溌剌かつ整然として洗練された、活発で安定して成長する作業環境を実現するために定められたプラクティスのスタイル、様式、パラダイムである。
+** ユースケース
+** 設計指針
++ org-modeのデフォルトの機能と変数の設定によって容易に実現される機能は縦横に利用する。
++ emacsの設定に関する最低限の理解のみを前提とし、Lispのコードを長々とinit.elに書き連ねることはしない。
++ gitは最低限の利用ができればよいが、gitを十分に活用する余地がある。
++ shell script に依存はしない。
+** 主要なパラダイム
+*** タスクか、タスクでないか
+*** 快適な存在と快適な表示のやりかた
+*** 生活の仕方は脚本のようなものだ
+**** 脚本は1つとは限らない
+*** そして、脚本は推敲を重ねて書き換えられていくものだ
+**** 推敲されるためには、”書き出されていなければならない”
+**** 良い推敲をするためには、良い道具と適切なやり方を知る必要がある
+
+
+** 定義
+*** ディレクトリ構造
+#+begin_src sh :results output :exports results
+    echo "Directory Structure:"
+    tree -d ~/org/
+#+end_src
+ /home/adelie/org
+ ├── agenda.org
+ ├── archive
+ │   ├── archive.org
+ │   ├── draft.org_archive
+ │   ├── graphpaper.org_archive
+ │   └── readiness.org_archive
+ ├── graphpaper.org
+ ├── habit.org
+ ├── model
+ │   └── script.org
+ └── note
+     ├── helloworld.udemy.org
+     ├── latex.org
+     ├── ltximg
+     │   ├── org-ltximg_00b652ea310bf87ac4ce016143b9d793bae6a845.svg
+     │   ├── org-ltximg_fe5af96d39cff44b8a5401db006ce276e645f96a.svg
+     │   └── org-ltximg_fe606b79b2553766f762fe189b91d241aae20379.svg
+     ├── pumlimg
+     │   ├── condisional_independence.png
+     │   ├── independence.png
+     │   └── independence.svg
+     ├── readiness.org
+     └── set_theory.org
+
 * トピックごとにブランチを使い分けたい！
 ** 理由
 *** 特定の期間のみに適用させたいスケジュールもある。
@@ -11,7 +61,6 @@
 **** 同じエントリをいくつもハードコードしなくてはならないらしい
 
 ** 
-
 
 * アイデア
 ** masterブランチをマスターとして、patchでtopicにキャッチアップさせる!
@@ -60,5 +109,20 @@ cat topic/topic.patch | sed, awk, grep > tmp.patchを利用
 ** マージではなく、パッチで処理する
 なぜなら、.gitattributesでのmerge=ours戦略では、コンフリクト、すなわち共通の祖先に対する矛盾する
 編集がぶつかったとき、マージする側の編集内容を採択するため。
+
+
+** note                                                             :ARCHIVE:
+script, scenario, agenda
++ [ ] タスクマネジメント 
+  + [ ] 実施実績を記録するべき繰り返しタスク（habit）
+  + [ ] 実施実績を残す必要のない繰り返しタスク（routine）
+  + [ ] 繰り返しではない日々の生成的なタスク（task）
+  + [ ] タスクではないが、繰り返され、毎日のスケジュールの骨子となる行動や時間（frame）
++ [ ] オーサリング
+  + [ ] 講座、イベント、議事録など、種々の形式でのノートテイキング
+  + [ ] UMLダイアグラムの挿入
+  + [ ] $\LaTeX$フラグメントの挿入
+
+
 
 
