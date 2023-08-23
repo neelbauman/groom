@@ -1,0 +1,173 @@
+-*- mode:org; -*-
+
+* GROOM ver1.0
+** modius operandi with org-mode
+Groomとは、自由でかつよく組織化された一貫性のある作業環境を実現するために、org-modeによるタスクマネジメント（TM）とオーサリング（AT）に対して定められた様式のことである。
+
+** 管理モデル
+*** 状況とタスク
+タスクとは、状況から引き出されるべきアクションの定式化のことである。
+
+**** タスクに要求される性質
+- 可塑性
+- 記録性
+
+*** タスクワークと非タスクワーク
+script（非タスクワークの時系列配置）のフレーム中に、タスクワークを配置するという管理モデル。
+- 異なる環境ややり方をscriptとして複数運用できる
+  + 出向、異動
+  + 特別な期間
+  - ワークフローの異なる複数のプロジェクト
+- script自体を管理対象に含めることができる
+  + ワークフローや生活リズムといった非TODOの記録や改善に繋げられる
+**** 分類
+
+-----
+タスクワーク（TODOされるべきもの）
+- habit的なタスク（長寿）
+  + homeでのタスク
+  + officeでのタスク
+- agenda的なタスク（典型）
+  + プロジェクトA
+  + プロジェクトB
+- instant的なタスク（短命）
+  + 一時的な伝達事項
+  + イベント事
+
+-----
+非タスクワーク
+script
+- usual
+- routine
+***　
+
+*** ノートテイキング
+*** コミュニケーション
+**** コミュニケーションの一般的原則
+情報の不足は意思決定に深刻な影響をもたらすが、一方で情報の無秩序・無制限な伝達は各々の負担を徒に増やすだけ。
+したがって、目指すべきは、必要かつ十分なコミュニケーションである。
+***** 小さなコトとどうでもいいことは同一視できない
+
+
+
+***** 報連相のより小さなコミュニケーション領域への分割
+- 報告
+  + REPORT
+  + BRIEF
+- 連絡
+  + NOTIFICATION
+  + SHARE
+- 相談
+  + ASK
+  + NEGOTIATION
+  + DISCUSS
+
+ここに、たとえばconfirmationが含まれていないことに注意。
+confirmationはコミュニケーションの形態ではなく、その目的であるところの意思決定や合意形成に属する。
+
+**** report
+すでに発生し、経過し、過ぎ去ってしまった出来事について
+概要、背景、時系列整理、報告主題への帰結
+のように分析的な視点から整理されたもの。
+
+時間をかけて作成されるべきもの。
+アクセシビリティが高いこと。
+
+**** brief
+現在進行系のタスクについての状況報告。
+端的かつ網羅的で、軽量であること。
+
+**** share&convey
+もっとも頻繁に流れるトラフィックである。
+軽量で、適切なターゲット設定とルーティングのもとにキャストされること。
+
+**** ask, sound out, negotiation, discuss
+** 
+* Groom
+タスク管理モデル、ナレッジ管理モデル、コミュニケーションモデルの３つのモデルからなる。
+** タスク管理モデル
+*** orgの管理パラダイム
+**** 書き散らかせ。いつでも効率的に組織化できるし、整理して表示することができる。
+***** sandboxとseedling, breeding
+
+***** なぜViewがあるのにファイルそれ自体を組織化したり整理したりしなければならないのか。
+- どこに何があるかわからない状態を作らないため
+- Viewに不安があるときにあたるための”原本”や”理解しやすいソース”が必要
+***** Speed Editing
+***** Capture
+***** Refile
+***** Archive
+***** Attachment
+***** Hyperlink
+***** View
+**** Follow the manner. then, feel free and get Well-Structured Texts
+*** orgのタスクモデル
+**** outline node と plain list
+**** タスクと予定
+*** org-modeの編集システム
+**** Document Structure
+***** Headlines
+***** Visiblity Cycling
+***** Motion
+***** Structure Editing
+***** Sparse Trees
+***** Plain Lists
+***** Drawers
+***** Blocks
+**** Tables
+**** Hyperlinks
+***** Internal Links
+ [[file://~/org/graphpaper.org]] や [[https://org.com]] のようなURIスキームで始まらないリンクは現在のドキュメントを示している。
+
+ 検索は、
+ 1. CUSTOM_ID
+ 2. Entry
+ 3. Dedicated Target
+ 4. Name
+
+ <<dedicated target>> 
+
+ [[dedicated target][dediccated target!]]
+***** Radio Tragets
+ <<<radio target>>>
+ この例のように、3重ブラケットで囲まれたターゲットはradio targetと呼ばれる。
+ 3重ブラケットで囲ったテキストをC-c C-cで評価すると、ターゲットリストに格納され、
+ Link表記でないノーマルなテキストを書くだけでも自動でInternal Link化されるようになる。
+ its radio target !!
+***** Search Option
+ リンク記述のあとにダブルコロンに続けて、行数やエントリやIDや正規表現を記述することでリンクを
+ followしたときにそれを検索してジャンプするという挙動ができる。
+
+ また、特定の形式のファイルに対しての検索ルールを関数によって定義することができるので、検索の
+ カスタムも可能である。
+
+***** Handling Links
+ 一時的なバッファにリンクをstoreしておいて、あとからそれを適切なフォーマットでバッファに挿入する！
+ C-c l org-store-link
+ C-c C-l org-insert-link
+
+ <<taget>>
+ [[taget][file:~/org/graphpaper.org::taget]]
+**** \TODO Items
+***** \TODO dependencies
+***** Priorities
+**** Tags
+**** Properties and Columns
+**** Dates and Times
+**** Refiling and Archiving
+**** Capture and Attatchment
+**** Agenda Views
+**** Markup for Rich Contents
+**** Exporting
+**** Citation
+**** Source Code
+**** Miscellaneous
+
+** ナレッジ管理モデル
+アイデアから仮説検証サイクル、まで、
+生成から組織化、保守しやすくてアクセシブルな蓄積、アーカイブや削除、
+コミュニケーションによる伝達までを含めたナレッジの総合的な取り扱いのモデル。
+*** マイニング
+
+
+
